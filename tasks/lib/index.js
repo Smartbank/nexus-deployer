@@ -74,7 +74,6 @@ var createAndUploadArtifacts = function (options, done) {
             }
 
             var curlOptions = [
-                '--silent',
                 '--output', '/dev/stderr',
                 '--write-out', '"%{http_code}"',
                 '--upload-file', fileLocation,
